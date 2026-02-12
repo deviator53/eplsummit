@@ -1,0 +1,67 @@
+---
+import emergingPhoto from '../assets/Emerging-Photos-39.png';
+---
+
+<section class="py-16 sm:py-24 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden">
+  <!-- Background Elements -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute top-0 left-0 w-96 h-96 bg-emerald-200/30 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-80 h-80 bg-lime-200/30 rounded-full blur-3xl"></div>
+  </div>
+  
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="max-w-5xl mx-auto">
+      <!-- Introduction Text -->
+      <div class="mb-12">
+        <p class="text-lg sm:text-xl text-gray-700 leading-relaxed mb-6">
+          The summit brings together young political aspirants, community leaders, professionals, civil society actors, policymakers, innovators, media, and development partners to foster dialogue, share best practices, and develop actionable strategies for national renewal.
+        </p>
+        
+        <p class="text-lg sm:text-xl text-gray-700 leading-relaxed">
+          EPLS is intentionally practical, outcome-driven, youth-centered, and media-visible, blending inspiration with hands-on engagement and post-summit activation. Rather than just dialogue, it will create a pipeline of politically conscious young Nigerians ready to engage responsibly in governance, elections, advocacy, and leadership.
+        </p>
+      </div>
+      
+      <!-- Background & Rationale Section -->
+      <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-gray-100">
+        <div class="mb-8">
+          <h2 class="text-3xl sm:text-4xl font-bold mb-2">
+            <span class="text-emerald-700">BACKGROUND & </span>
+            <span class="text-emerald-900">RATIONALE</span>
+          </h2>
+        </div>
+        
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+          <!-- Text Content -->
+          <div>
+            <p class="text-base sm:text-lg text-gray-700 leading-relaxed">
+              Nigeria stands at a defining crossroads. With over 60% of the population under 35 years old, the future of the nation's democracy depends largely on the readiness of its youth to participate meaningfully in governance. Yet, political apathy, lack of access, misinformation, and mistrust of institutions continue to hinder young people's engagement.
+            </p>
+          </div>
+          
+          <!-- Image Placeholder -->
+          <div class="relative">
+            <div class="relative">
+              <!-- Green circular accent -->
+              <div class="absolute -top-4 -left-4 w-32 h-32 bg-gradient-to-br from-emerald-400 to-emerald-500 rounded-full opacity-20"></div>
+              <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-br from-lime-400 to-lime-500 rounded-full opacity-20"></div>
+              
+              <!-- Image container with green border -->
+              <div class="relative bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-3xl p-1.5 shadow-2xl">
+                <div class="bg-white rounded-3xl p-2">
+                  <div class="aspect-[4/3] rounded-2xl overflow-hidden">
+                    <img 
+                      src={emergingPhoto.src} 
+                      alt="Youth Engagement at EPLS" 
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

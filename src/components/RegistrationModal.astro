@@ -1,0 +1,249 @@
+---
+---
+
+<!-- Registration Modal -->
+<div id="registrationModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+  <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl transform transition-all">
+    <!-- Modal Header -->
+    <div class="bg-gradient-to-r from-emerald-600 to-emerald-700 p-6 sm:p-8 rounded-t-3xl relative">
+      <button id="closeModal" class="absolute top-4 right-4 text-white hover:text-emerald-200 transition-colors">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+      <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">Register for EPLS 2026</h2>
+      <p class="text-emerald-100">Join us on 24th & 25th March 2026 in Abuja</p>
+    </div>
+    
+    <!-- Modal Body -->
+    <div class="p-6 sm:p-8">
+      <form id="registrationForm" class="space-y-6">
+        <!-- Personal Information -->
+        <div class="space-y-4">
+          <h3 class="text-lg font-semibold text-gray-900 border-b border-gray-200 pb-2">Personal Information</h3>
+          
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
+              <input 
+                type="text" 
+                id="firstName" 
+                name="firstName" 
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
+                placeholder="John"
+              />
+            </div>
+            
+            <div>
+              <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name *</label>
+              <input 
+                type="text" 
+                id="lastName" 
+                name="lastName" 
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
+                placeholder="Doe"
+              />
+            </div>
+          </div>
+          
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
+              placeholder="john.doe@example.com"
+            />
+          </div>
+          
+          <div>
+            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+            <input 
+              type="tel" 
+              id="phone" 
+              name="phone" 
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
+              placeholder="08012345678"
+            />
+          </div>
+        </div>
+        
+        <!-- Professional Information -->
+        <div class="space-y-4">
+          <h3 class="text-lg font-semibold text-gray-900 border-b border-gray-200 pb-2">Professional Information</h3>
+          
+          <div>
+            <label for="organization" class="block text-sm font-medium text-gray-700 mb-2">Organization/Institution</label>
+            <input 
+              type="text" 
+              id="organization" 
+              name="organization"
+              class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
+              placeholder="Your organization"
+            />
+          </div>
+          
+          <div>
+            <label for="position" class="block text-sm font-medium text-gray-700 mb-2">Position/Role</label>
+            <input 
+              type="text" 
+              id="position" 
+              name="position"
+              class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
+              placeholder="Your position"
+            />
+          </div>
+          
+          <div>
+            <label for="category" class="block text-sm font-medium text-gray-700 mb-2">Participant Category *</label>
+            <select 
+              id="category" 
+              name="category" 
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
+            >
+              <option value="">Select category</option>
+              <option value="political-aspirant">Political Aspirant</option>
+              <option value="community-leader">Community Leader</option>
+              <option value="civil-society">Civil Society Actor</option>
+              <option value="policymaker">Policymaker</option>
+              <option value="media">Media Professional</option>
+              <option value="student">Student</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        
+        <!-- Additional Information -->
+        <div class="space-y-4">
+          <h3 class="text-lg font-semibold text-gray-900 border-b border-gray-200 pb-2">Additional Information</h3>
+          
+          <div>
+            <label for="state" class="block text-sm font-medium text-gray-700 mb-2">State of Residence *</label>
+            <input 
+              type="text" 
+              id="state" 
+              name="state" 
+              required
+              class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
+              placeholder="Lagos"
+            />
+          </div>
+          
+          <div>
+            <label for="expectations" class="block text-sm font-medium text-gray-700 mb-2">What are your expectations from the summit?</label>
+            <textarea 
+              id="expectations" 
+              name="expectations" 
+              rows="3"
+              class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors resize-none"
+              placeholder="Share your expectations..."
+            ></textarea>
+          </div>
+        </div>
+        
+        <!-- Terms and Conditions -->
+        <div class="flex items-start gap-3">
+          <input 
+            type="checkbox" 
+            id="terms" 
+            name="terms" 
+            required
+            class="mt-1 w-4 h-4 text-emerald-600 border-gray-300 rounded focus:ring-emerald-500"
+          />
+          <label for="terms" class="text-sm text-gray-600">
+            I agree to receive updates about the summit and understand that my information will be used in accordance with the privacy policy. *
+          </label>
+        </div>
+        
+        <!-- Submit Button -->
+        <div class="flex flex-col sm:flex-row gap-4">
+          <button 
+            type="submit"
+            class="flex-1 px-6 py-4 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white font-semibold rounded-xl hover:from-emerald-700 hover:to-emerald-800 transform hover:scale-105 transition-all duration-300 shadow-lg"
+          >
+            Complete Registration
+          </button>
+          <button 
+            type="button"
+            id="cancelButton"
+            class="px-6 py-4 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition-colors"
+          >
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Modal functionality
+  const modal = document.getElementById('registrationModal');
+  const closeModalBtn = document.getElementById('closeModal');
+  const cancelBtn = document.getElementById('cancelButton');
+  const form = document.getElementById('registrationForm');
+  
+  // Open modal function
+  function openModal() {
+    if (modal) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+  
+  // Close modal function
+  function closeModal() {
+    if (modal) {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = 'auto';
+    }
+  }
+  
+  // Event listeners
+  closeModalBtn?.addEventListener('click', closeModal);
+  cancelBtn?.addEventListener('click', closeModal);
+  
+  // Close on outside click
+  modal?.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+  
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal?.classList.contains('hidden')) {
+      closeModal();
+    }
+  });
+  
+  // Form submission
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    // Get form data
+    const formData = new FormData(form as HTMLFormElement);
+    const data = Object.fromEntries(formData.entries());
+    
+    // Here you would typically send the data to your backend
+    console.log('Registration data:', data);
+    
+    // Show success message
+    alert('Thank you for registering! We will send you a confirmation email shortly.');
+    
+    // Reset form and close modal
+    (form as HTMLFormElement).reset();
+    closeModal();
+  });
+  
+  // Expose openModal globally for buttons to use
+  (window as any).openRegistrationModal = openModal;
+</script>

@@ -1,0 +1,157 @@
+---
+import emergingImage from '../assets/emerging.png';
+---
+
+<section class="py-16 sm:py-24 bg-gradient-to-br from-slate-50 via-white to-emerald-50 relative overflow-hidden">
+  <!-- Background Elements -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute top-1/4 -left-32 w-96 h-96 bg-emerald-200/30 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-1/4 -right-32 w-80 h-80 bg-orange-200/30 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-emerald-100/40 rounded-full blur-2xl"></div>
+  </div>
+  
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <!-- Vision Section -->
+    <div class="mb-20 lg:mb-32">
+      <div class="grid lg:grid-cols-12 gap-8 lg:gap-16 items-center">
+        <!-- Vision Image -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative">
+            <!-- Orange circular frame -->
+            <div class="w-80 h-80 sm:w-96 sm:h-96 mx-auto relative">
+              <div class="absolute inset-0 bg-gradient-to-br from-orange-400 to-orange-500 rounded-full p-4">
+                <div class="w-full h-full bg-white rounded-full p-6 shadow-2xl">
+                  <img 
+                    src={emergingImage.src} 
+                    alt="Emerging Political Leader" 
+                    class="w-full h-full object-cover rounded-full"
+                  />
+                </div>
+              </div>
+            </div>
+            
+            <!-- Vision Badge -->
+            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+              <div class="bg-gradient-to-r from-emerald-500 to-emerald-600 text-white px-8 py-3 rounded-full shadow-lg transform -rotate-2">
+                <span class="text-lg font-bold uppercase tracking-wide">VISION</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Vision Content -->
+        <div class="lg:col-span-7">
+          <div class="bg-gradient-to-br from-orange-400 to-orange-500 rounded-3xl p-8 sm:p-12 text-white shadow-2xl">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 leading-tight">
+              Empowering a new generation of visionary leaders who drive inclusive governance, sustainable development, and positive change in Nigeria.
+            </h2>
+            
+            <div class="space-y-4 text-orange-50">
+              <div class="flex items-start gap-3">
+                <div class="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                <span class="text-lg">Building inclusive democratic institutions</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                <span class="text-lg">Fostering sustainable development practices</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                <span class="text-lg">Promoting ethical leadership standards</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Mission Section -->
+    <div class="mb-20">
+      <div class="text-center mb-12">
+        <div class="inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-full shadow-lg mb-8">
+          <span class="text-2xl font-bold uppercase tracking-wide">MISSION</span>
+        </div>
+      </div>
+      
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-2xl border border-gray-100">
+          <p class="text-xl sm:text-2xl text-gray-800 leading-relaxed text-center mb-8">
+            To equip emerging political leaders with skills, networks, and knowledge to lead effectively, promote accountability, and shape Nigeria's future through responsible governance and citizen engagement.
+          </p>
+          
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="text-center p-6 bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl">
+              <div class="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                </svg>
+              </div>
+              <h3 class="font-semibold text-gray-800 mb-2">Skills Development</h3>
+              <p class="text-sm text-gray-600">Leadership training and capacity building</p>
+            </div>
+            
+            <div class="text-center p-6 bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl">
+              <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+              </div>
+              <h3 class="font-semibold text-gray-800 mb-2">Network Building</h3>
+              <p class="text-sm text-gray-600">Connecting leaders across Nigeria</p>
+            </div>
+            
+            <div class="text-center p-6 bg-gradient-to-br from-teal-50 to-teal-100 rounded-2xl sm:col-span-2 lg:col-span-1">
+              <div class="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+              <h3 class="font-semibold text-gray-800 mb-2">Knowledge Sharing</h3>
+              <p class="text-sm text-gray-600">Best practices and innovative solutions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Executive Summary -->
+    <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 sm:p-12 shadow-xl">
+      <div class="text-center mb-8">
+        <div class="inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-full shadow-lg mb-6">
+          <span class="text-xl font-bold uppercase tracking-wide">Executive Summary</span>
+        </div>
+      </div>
+      
+      <div class="max-w-4xl mx-auto">
+        <p class="text-lg sm:text-xl text-gray-800 leading-relaxed text-center mb-8">
+          The Emerging Political Leaders Summit 2026 (EPLS) is a landmark national civic-political leadership gathering designed to mobilize, educate, and activate Nigeria's next generation of leaders ahead of the 2027 General Elections.
+        </p>
+        
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+          <div class="bg-white rounded-2xl p-6 shadow-lg">
+            <div class="text-3xl font-bold text-orange-500 mb-2">500+</div>
+            <div class="text-gray-600 font-medium">Emerging Leaders</div>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-lg">
+            <div class="text-3xl font-bold text-emerald-500 mb-2">36</div>
+            <div class="text-gray-600 font-medium">States Represented</div>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-lg">
+            <div class="text-3xl font-bold text-teal-500 mb-2">2</div>
+            <div class="text-gray-600 font-medium">Days of Impact</div>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-lg">
+            <div class="text-3xl font-bold text-orange-500 mb-2">2027</div>
+            <div class="text-gray-600 font-medium">Election Focus</div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-12">
+          <button class="px-8 py-4 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-semibold rounded-xl hover:from-emerald-600 hover:to-emerald-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-emerald-500/25 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2">
+            Join the Summit
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

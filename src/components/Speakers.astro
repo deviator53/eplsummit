@@ -1,0 +1,253 @@
+---
+// Import speaker images
+import goodluck from '../assets/goodluck.png';
+import ribadu from '../assets/ribadu.png';
+import abbas from '../assets/abbas.png';
+import olawande from '../assets/olawande.png';
+import seyi from '../assets/seyi.png';
+import uzodinma from '../assets/uzodinma.png';
+import matthewHassan from '../assets/matthew-hassan.png';
+import peterObi from '../assets/peter-obi.png';
+import govDauda from '../assets/gov-dauda.png';
+import govNasir from '../assets/gov-nasir.png';
+import senNatasha from '../assets/sen-natasha.png';
+import mohammedElrufai from '../assets/mohammed-elrufai.png';
+import drZacch from '../assets/dr zacch.png';
+import drMustuapha from '../assets/dr mustapha.png';
+import honBunmi from '../assets/hon bunmi.png';
+import samsonItodo from '../assets/samson-itodo.png';
+import kashifuInuwa from '../assets/kashifu-inuwa.png';
+import yesufu from '../assets/yesufu.png';
+import barrIsmael from '../assets/barr ismael.png';
+import drDayo from '../assets/dr dayo.png';
+import profJoash from '../assets/prof joash.png';
+
+const keySpeakers = [
+  {
+    name: "Dr. Goodluck Jonathan, GCFR",
+    title: "Former President of Nigeria",
+    image: goodluck,
+    badge: "His Excellency"
+  },
+  {
+    name: "Mallam Nuhu Ribadu",
+    title: "National Security Adviser",
+    image: ribadu
+  },
+  {
+    name: "Rt. Hon. Abbas Tajudeen, PhD, GCON",
+    title: "Speaker, House of Representatives",
+    image: abbas,
+    highlight: true
+  },
+  {
+    name: "Hon. Olawande Emmanuel Ayodele",
+    title: "The Honorable Minister of Youth Development - Chief Host",
+    image: olawande,
+    highlight: true
+  }
+];
+
+const speakersAndPanelists = [
+  {
+    name: "Okanlomo Seyi Tinubu",
+    title: "Chief Facilitator",
+    image: seyi
+  },
+  {
+    name: "Sen. Hope Uzodinma",
+    title: "Chairman, Progressive Governors' Forum",
+    image: uzodinma
+  },
+  {
+    name: "Father Matthew Hassan Kukah, CON",
+    title: "Founder, The Kukah Center",
+    image: matthewHassan
+  },
+  {
+    name: "Mr. Peter Obi",
+    title: "Former presidential aspirant, LP",
+    image: peterObi
+  },
+  {
+    name: "H.E Gov. Dauda Lawal",
+    title: "Zamfara State Governor",
+    image: govDauda
+  },
+  {
+    name: "H.E Gov. Nasir Idris",
+    title: "Kebbi State Governor",
+    image: govNasir
+  },
+  {
+    name: "Sen. Natasha Akpoti-Uduaghan",
+    title: "Senator representing Kogi Central",
+    image: senNatasha
+  },
+  {
+    name: "Rep Mohammed Bello El-Rufai",
+    title: "Kaduna North Federal Constituency",
+    image: mohammedElrufai
+  },
+  {
+    name: "Dr. Zacch Adelabu Adedeji",
+    title: "Chairman, Nigeria Revenue Board",
+    image: drZacch
+  },
+  {
+    name: "Dr. Mustapha Abdullahi",
+    title: "Director General, Energy Commission of Nigeria",
+    image: drMustuapha
+  },
+  {
+    name: "Rt. Hon. Bunmi Tunji-Ojo",
+    title: "Hon Minister of Interior",
+    image: honBunmi
+  },
+  {
+    name: "Samson Itodo",
+    title: "Executive Director, YIAGA Africa",
+    image: samsonItodo
+  },
+  {
+    name: "Kashifu Inuwa Abdullahi, CCIE",
+    title: "Director General, NITDA",
+    image: kashifuInuwa
+  },
+  {
+    name: "Hajia Aisha Yesufu",
+    title: "Deputy Governorship Candidate for LP, Edo State",
+    image: yesufu
+  },
+  {
+    name: "Barr. Ismaeel Ahmed, OON",
+    title: "Executive Chairman, PCNGi",
+    image: barrIsmael
+  },
+  {
+    name: "Dr. Dayo Isreal",
+    title: "National Youth Leader",
+    image: drDayo
+  },
+  {
+    name: "Prof Joash Amupitan",
+    title: "Chairman, INEC",
+    image: profJoash
+  }
+];
+---
+
+<section class="py-16 sm:py-24 bg-gradient-to-br from-emerald-600 via-emerald-700 to-green-800 relative overflow-hidden">
+  <!-- Background Elements -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute top-0 left-0 w-96 h-96 bg-lime-400/20 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/2 left-1/4 w-64 h-64 bg-emerald-400/10 rounded-full blur-2xl"></div>
+  </div>
+  
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <!-- Key Features Section -->
+    <div class="mb-16">
+      <div class="inline-block bg-white rounded-3xl px-8 py-6 mb-12 shadow-xl">
+        <h2 class="text-3xl sm:text-4xl font-bold text-emerald-700">
+          KEY <span class="text-emerald-900">FEATURES</span>
+        </h2>
+      </div>
+      
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl">
+        <div class="flex items-center gap-3 text-white">
+          <div class="w-4 h-4 bg-white rounded-full flex-shrink-0"></div>
+          <span class="text-lg font-medium">Keynote Speeches</span>
+        </div>
+        <div class="flex items-center gap-3 text-white">
+          <div class="w-4 h-4 bg-white rounded-full flex-shrink-0"></div>
+          <span class="text-lg font-medium">Networking and mentorship sessions</span>
+        </div>
+        <div class="flex items-center gap-3 text-white">
+          <div class="w-4 h-4 bg-white rounded-full flex-shrink-0"></div>
+          <span class="text-lg font-medium">Plenary and breakout sessions</span>
+        </div>
+        <div class="flex items-center gap-3 text-white">
+          <div class="w-4 h-4 bg-white rounded-full flex-shrink-0"></div>
+          <span class="text-lg font-medium">Interactive session (Q&A)</span>
+        </div>
+        <div class="flex items-center gap-3 text-white">
+          <div class="w-4 h-4 bg-white rounded-full flex-shrink-0"></div>
+          <span class="text-lg font-medium">Policy hackathons</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Key Speakers Section -->
+    <div class="mb-20">
+      <div class="inline-block bg-white rounded-3xl px-8 py-6 mb-12 shadow-xl">
+        <h2 class="text-3xl sm:text-4xl font-bold text-emerald-700">
+          KEY <span class="text-emerald-900">SPEAKERS</span>
+        </h2>
+      </div>
+      
+      <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+        {keySpeakers.map((speaker) => (
+          <div class="group">
+            <div class="relative mb-3 sm:mb-6">
+              <!-- Lime green frame -->
+              <div class="bg-gradient-to-br from-lime-400 to-lime-500 rounded-2xl sm:rounded-3xl p-1 sm:p-1.5 shadow-xl sm:shadow-2xl transform group-hover:scale-105 transition-transform duration-300">
+                <div class="bg-white rounded-2xl sm:rounded-3xl p-1 sm:p-2">
+                  <img 
+                    src={speaker.image.src} 
+                    alt={speaker.name}
+                    class="w-full aspect-[3/4] object-cover rounded-xl sm:rounded-2xl"
+                  />
+                </div>
+              </div>
+            </div>
+            
+            <div class="text-center text-white px-1">
+              {speaker.badge && (
+                <p class="text-xs sm:text-sm italic mb-1 text-lime-300">{speaker.badge}</p>
+              )}
+              <h3 class="font-bold text-sm sm:text-base lg:text-lg mb-1 sm:mb-2">{speaker.name}</h3>
+              <p class="text-xs sm:text-sm text-emerald-100">
+                {speaker.highlight && <span class="text-yellow-300">★ </span>}
+                {speaker.title}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+    
+    <!-- Speakers and Panelists Section -->
+    <div>
+      <div class="inline-block bg-white rounded-3xl px-8 py-6 mb-12 shadow-xl">
+        <h2 class="text-3xl sm:text-4xl font-bold text-emerald-700">
+          SPEAKERS AND <span class="text-emerald-900">PANELISTS</span>
+        </h2>
+      </div>
+      
+      <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+        {speakersAndPanelists.map((speaker) => (
+          <div class="group">
+            <div class="relative mb-3 sm:mb-6">
+              <!-- Lime green frame -->
+              <div class="bg-gradient-to-br from-lime-400 to-lime-500 rounded-2xl sm:rounded-3xl p-1 sm:p-1.5 shadow-xl sm:shadow-2xl transform group-hover:scale-105 transition-transform duration-300">
+                <div class="bg-white rounded-2xl sm:rounded-3xl p-1 sm:p-2">
+                  <img 
+                    src={speaker.image.src} 
+                    alt={speaker.name}
+                    class="w-full aspect-[3/4] object-cover rounded-xl sm:rounded-2xl"
+                  />
+                </div>
+              </div>
+            </div>
+            
+            <div class="text-center text-white px-1">
+              <h3 class="font-bold text-sm sm:text-base lg:text-lg mb-1 sm:mb-2">{speaker.name}</h3>
+              <p class="text-xs sm:text-sm text-emerald-100">{speaker.title}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
