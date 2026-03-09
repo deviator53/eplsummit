@@ -1,76 +1,97 @@
 ---
 import emergingLogo from '../assets/emerging-logo.png';
+import convenerImage from '../assets/epl-convener.jpg';
 ---
 
-<section class="py-16 sm:py-24 bg-gradient-to-br from-lime-400 via-emerald-500 to-green-700 relative overflow-hidden">
-  <!-- Background Pattern -->
-  <div class="absolute inset-0 opacity-20">
-    <div class="absolute inset-0" style="background-image: repeating-linear-gradient(-45deg, transparent, transparent 50px, rgba(255,255,255,.05) 50px, rgba(255,255,255,.05) 100px);"></div>
-  </div>
-  
-  <!-- Decorative Wave Lines -->
-  <div class="absolute top-0 left-0 w-full h-full opacity-10">
-    <svg class="w-full h-full" viewBox="0 0 1000 1000" preserveAspectRatio="none">
-      <path d="M0,300 Q250,200 500,300 T1000,300" stroke="white" stroke-width="2" fill="none" opacity="0.3"/>
-      <path d="M0,400 Q250,300 500,400 T1000,400" stroke="white" stroke-width="2" fill="none" opacity="0.3"/>
-      <path d="M0,500 Q250,400 500,500 T1000,500" stroke="white" stroke-width="2" fill="none" opacity="0.3"/>
-    </svg>
+<section class="py-16 sm:py-24 bg-gradient-to-br from-slate-50 via-white to-gray-50 relative overflow-hidden">
+  <!-- Subtle Background Elements -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute top-1/4 -left-32 w-96 h-96 bg-orange-100/40 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-1/4 -right-32 w-80 h-80 bg-emerald-100/40 rounded-full blur-3xl"></div>
   </div>
   
   <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div class="max-w-2xl mx-auto">
-      <!-- Card Container -->
-      <div class="bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-3xl p-1 shadow-2xl">
-        <div class="bg-white/10 backdrop-blur-sm rounded-3xl border-2 border-white/30 p-8 sm:p-12">
-          <!-- Logo -->
-          <div class="text-center mb-8">
-            <img 
-              src={emergingLogo.src} 
-              alt="Emerging Political Leaders Summit Logo" 
-              class="h-16 sm:h-20 mx-auto mb-6"
-            />
-            
-            <!-- Contact Info -->
-            <div class="space-y-2 mb-8">
-              <a href="mailto:eplsummitng@gmail.com" class="block text-white text-lg sm:text-xl font-semibold hover:text-lime-300 transition-colors">
-                eplsummitng@gmail.com
-              </a>
-             
+    <!-- Section Header -->
+    <div class="text-center mb-12">
+      <div class="inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-full shadow-lg mb-4">
+        <span class="text-xl font-bold uppercase tracking-wide">Summit Convener</span>
+      </div>
+    </div>
+    
+    <div class="max-w-5xl mx-auto">
+      <!-- Modern Card -->
+      <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+        <div class="grid lg:grid-cols-5 gap-0">
+          <!-- Convener Image -->
+          <div class="lg:col-span-2 bg-gradient-to-br from-orange-50 to-emerald-50 p-8 flex items-center justify-center">
+            <div class="relative">
+              <div class="w-64 h-64 relative">
+                <div class="absolute inset-0 bg-gradient-to-br from-orange-400 to-emerald-500 rounded-full blur-xl opacity-30"></div>
+                <img 
+                  src={convenerImage.src} 
+                  alt="Wale Ajani - Summit Convener" 
+                  class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-xl"
+                />
+              </div>
             </div>
           </div>
           
-          <!-- Convener Badge -->
-          <div class="bg-white rounded-2xl px-6 py-3 mb-6 text-center">
-            <h3 class="text-emerald-700 text-2xl sm:text-3xl font-bold">CONVENER</h3>
-          </div>
-          
-          <!-- Convener Name -->
-          <div class="text-center mb-6">
-            <h2 class="text-white text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-              Wale Ajani
-            </h2>
+          <!-- Convener Info -->
+          <div class="lg:col-span-3 p-8 sm:p-12">
+            <!-- Logo -->
+            <div class="mb-6">
+              <img 
+                src={emergingLogo.src} 
+                alt="Emerging Political Leaders Summit Logo" 
+                class="h-12 sm:h-14"
+              />
+            </div>
             
-            <!-- Phone Number -->
-            <a href="tel:08032266543" class="inline-block text-orange-400 text-2xl sm:text-3xl font-bold hover:text-orange-300 transition-colors">
-              08032266543
-            </a>
-          </div>
-          
-          <!-- Additional Contact Options -->
-          <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            <a href="tel:08032266543" class="flex items-center justify-center gap-2 px-6 py-3 bg-white text-emerald-700 font-semibold rounded-xl hover:bg-emerald-50 transition-colors">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-              </svg>
-              Call Now
-            </a>
+            <!-- Name & Title -->
+            <div class="mb-8">
+              <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">
+                Wale Ajani
+              </h2>
+              <p class="text-lg text-gray-600 font-medium">Summit Convener</p>
+            </div>
             
-            <a href="mailto:eplsummitng@gmail.com" class="flex items-center justify-center gap-2 px-6 py-3 bg-emerald-800 text-white font-semibold rounded-xl hover:bg-emerald-900 transition-colors">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-              </svg>
-              Send Email
-            </a>
+            <!-- Contact Information -->
+            <div class="space-y-4 mb-8">
+              <a href="tel:08032266543" class="flex items-center gap-3 text-gray-700 hover:text-orange-600 transition-colors group">
+                <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center group-hover:bg-orange-200 transition-colors">
+                  <svg class="w-5 h-5 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                  </svg>
+                </div>
+                <span class="text-lg font-semibold">08032266543</span>
+              </a>
+              
+              <a href="mailto:eplsummitng@gmail.com" class="flex items-center gap-3 text-gray-700 hover:text-emerald-600 transition-colors group">
+                <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center group-hover:bg-emerald-200 transition-colors">
+                  <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
+                <span class="text-lg font-semibold">eplsummitng@gmail.com</span>
+              </a>
+            </div>
+            
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="tel:08032266543" class="flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-xl hover:from-orange-600 hover:to-orange-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-orange-500/25">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+                Call Now
+              </a>
+              
+              <a href="mailto:eplsummitng@gmail.com" class="flex items-center justify-center gap-2 px-6 py-3 bg-white border-2 border-gray-200 text-gray-700 font-semibold rounded-xl hover:border-emerald-500 hover:text-emerald-600 transition-all duration-300">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+                Send Email
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -1,6 +1,25 @@
 ---
-import emergingPhoto from '../assets/Emerging-Photos-39.png';
+// Import all slider images
+const sliderImages = import.meta.glob('../assets/sliders/*.{png,jpg,jpeg,webp}', { eager: true });
+const imageUrls = Object.values(sliderImages).map((module: any) => module.default);
 ---
+
+<style>
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: scale(1.1);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .slider-image {
+    animation: slideIn 1s ease-in-out;
+  }
+</style>
 
 <section class="py-16 sm:py-24 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden">
   <!-- Background Elements -->
@@ -39,7 +58,7 @@ import emergingPhoto from '../assets/Emerging-Photos-39.png';
             </p>
           </div>
           
-          <!-- Image Placeholder -->
+          <!-- Image Slider -->
           <div class="relative">
             <div class="relative">
               <!-- Green circular accent -->
@@ -49,14 +68,28 @@ import emergingPhoto from '../assets/Emerging-Photos-39.png';
               <!-- Image container with green border -->
               <div class="relative bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-3xl p-1.5 shadow-2xl">
                 <div class="bg-white rounded-3xl p-2">
-                  <div class="aspect-[4/3] rounded-2xl overflow-hidden">
-                    <img 
-                      src={emergingPhoto.src} 
-                      alt="Youth Engagement at EPLS" 
-                      class="w-full h-full object-cover"
-                    />
+                  <div class="aspect-[4/3] rounded-2xl overflow-hidden relative">
+                    {imageUrls.map((imageUrl, index) => (
+                      <img 
+                        src={imageUrl.src}
+                        alt={`EPLS Event ${index + 1}`}
+                        class={`slider-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${index === 0 ? 'opacity-100' : 'opacity-0'}`}
+                        data-slide-index={index}
+                      />
+                    ))}
                   </div>
                 </div>
+              </div>
+              
+              <!-- Slider Indicators -->
+              <div class="flex justify-center gap-2 mt-4">
+                {imageUrls.map((_, index) => (
+                  <button
+                    class={`slider-dot w-2 h-2 rounded-full transition-all duration-300 ${index === 0 ? 'bg-emerald-600 w-8' : 'bg-gray-300'}`}
+                    data-dot-index={index}
+                    aria-label={`Go to slide ${index + 1}`}
+                  ></button>
+                ))}
               </div>
             </div>
           </div>
@@ -65,3 +98,51 @@ import emergingPhoto from '../assets/Emerging-Photos-39.png';
     </div>
   </div>
 </section>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slider-image');
+  const dots = document.querySelectorAll('.slider-dot');
+  const totalSlides = slides.length;
+
+  function showSlide(index: number) {
+    // Hide all slides
+    slides.forEach((slide) => {
+      slide.classList.remove('opacity-100');
+      slide.classList.add('opacity-0');
+    });
+
+    // Update dots
+    dots.forEach((dot) => {
+      dot.classList.remove('bg-emerald-600', 'w-8');
+      dot.classList.add('bg-gray-300');
+    });
+
+    // Show current slide
+    slides[index].classList.remove('opacity-0');
+    slides[index].classList.add('opacity-100');
+
+    // Highlight current dot
+    dots[index].classList.remove('bg-gray-300');
+    dots[index].classList.add('bg-emerald-600', 'w-8');
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+  }
+
+  // Auto-advance slides every 4 seconds
+  let slideInterval = setInterval(nextSlide, 4000);
+
+  // Add click handlers to dots
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      currentSlide = index;
+      showSlide(currentSlide);
+      // Reset interval when manually changing slides
+      clearInterval(slideInterval);
+      slideInterval = setInterval(nextSlide, 4000);
+    });
+  });
+</script>

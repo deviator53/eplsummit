@@ -2,7 +2,7 @@
 import emergingLogo from '../assets/emerging-logo.png';
 ---
 
-<nav class="absolute top-0 left-0 right-0 z-50 bg-black/10 backdrop-blur-md border-b border-white/10">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-lg border-b border-white/10 transition-all duration-300">
   <div class="container mx-auto px-6">
     <div class="flex items-center justify-between h-20">
       <!-- Logo -->
@@ -12,12 +12,12 @@ import emergingLogo from '../assets/emerging-logo.png';
       
       <!-- Desktop Menu -->
       <div class="hidden lg:flex items-center space-x-8">
-        <a href="#home" class="text-white hover:text-emerald-300 transition-colors font-medium">Home</a>
-        <a href="#about" class="text-emerald-200 hover:text-emerald-300 transition-colors font-medium">About</a>
-        <a href="#conference" class="text-emerald-200 hover:text-emerald-300 transition-colors font-medium">Conference</a>
-        <a href="#events" class="text-emerald-200 hover:text-emerald-300 transition-colors font-medium">Events</a>
-        <a href="#contact" class="text-emerald-200 hover:text-emerald-300 transition-colors font-medium">Contact</a>
-        <button class="px-6 py-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold rounded-lg hover:from-emerald-600 hover:to-teal-600 transition-all duration-300 transform hover:scale-105">
+        <a href="#home" class="text-white hover:text-emerald-800 transition-colors font-medium">Home</a>
+        <a href="#about" class="text-white hover:text-emerald-800 transition-colors font-medium">About</a>
+        <a href="#conference" class="text-white hover:text-emerald-800 transition-colors font-medium">Conference</a>
+        <a href="#events" class="text-white hover:text-emerald-800 transition-colors font-medium">Events</a>
+        <a href="#contact" class="text-white hover:text-emerald-800 transition-colors font-medium">Contact</a>
+        <button onclick="window.openRegistrationModal()" class="px-6 py-2 bg-emerald-500 text-white font-semibold rounded-lg hover:bg-emerald-600 transition-all duration-300 transform hover:scale-105">
           Register
         </button>
       </div>
@@ -38,7 +38,7 @@ import emergingLogo from '../assets/emerging-logo.png';
         <a href="#conference" class="block text-emerald-200 hover:text-emerald-300 transition-colors font-medium py-2">Conference</a>
         <a href="#events" class="block text-emerald-200 hover:text-emerald-300 transition-colors font-medium py-2">Events</a>
         <a href="#contact" class="block text-emerald-200 hover:text-emerald-300 transition-colors font-medium py-2">Contact</a>
-        <button class="w-full mt-4 px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold rounded-lg">
+        <button onclick="window.openRegistrationModal()" class="w-full mt-4 px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold rounded-lg">
           Register
         </button>
       </div>

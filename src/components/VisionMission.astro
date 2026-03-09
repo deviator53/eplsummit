@@ -1,12 +1,13 @@
 ---
 import emergingImage from '../assets/emerging.png';
+import eplVisionVideo from '../assets/epl-vision.mp4';
 ---
 
 <section class="py-16 sm:py-24 bg-gradient-to-br from-slate-50 via-white to-emerald-50 relative overflow-hidden">
-  <!-- Background Elements -->
-  <div class="absolute inset-0 overflow-hidden">
-    <div class="absolute top-1/4 -left-32 w-96 h-96 bg-emerald-200/30 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-1/4 -right-32 w-80 h-80 bg-orange-200/30 rounded-full blur-3xl"></div>
+  <!-- Animated Background Elements -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute top-1/4 -left-32 w-96 h-96 bg-emerald-200/30 rounded-full blur-3xl animate-pulse"></div>
+    <div class="absolute bottom-1/4 -right-32 w-80 h-80 bg-orange-200/30 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
     <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-emerald-100/40 rounded-full blur-2xl"></div>
   </div>
   
@@ -14,18 +15,23 @@ import emergingImage from '../assets/emerging.png';
     <!-- Vision Section -->
     <div class="mb-20 lg:mb-32">
       <div class="grid lg:grid-cols-12 gap-8 lg:gap-16 items-center">
-        <!-- Vision Image -->
+        <!-- Vision Video -->
         <div class="lg:col-span-5 relative">
           <div class="relative">
             <!-- Orange circular frame -->
             <div class="w-80 h-80 sm:w-96 sm:h-96 mx-auto relative">
               <div class="absolute inset-0 bg-gradient-to-br from-orange-400 to-orange-500 rounded-full p-4">
-                <div class="w-full h-full bg-white rounded-full p-6 shadow-2xl">
-                  <img 
-                    src={emergingImage.src} 
-                    alt="Emerging Political Leader" 
+                <div class="w-full h-full bg-white rounded-full p-6 shadow-2xl overflow-hidden">
+                  <video 
+                    src={eplVisionVideo} 
+                    autoplay
+                    loop
+                    muted
+                    playsinline
                     class="w-full h-full object-cover rounded-full"
-                  />
+                  >
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
               </div>
             </div>
